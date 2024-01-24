@@ -44,14 +44,14 @@ const SignUp = () => {
   };
   return (
     <div className="h-screen w-screen flex justify-center items-center flex-col">
-      <h1>Sign Up Here</h1>
+      <h1 className="text-xl font-bold">Sign Up Here</h1>
 
       <div>
         <form className="flex flex-col" onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
             type="text"
-            className="border-2 border-red-200 p-2 rounded"
+            className="border-2 border-red-200 p-2 rounded outline-none focus:border-red-400"
             placeholder="Enter your name..."
             value={user.name}
             onChange={(e) => {
@@ -61,7 +61,7 @@ const SignUp = () => {
 
           <label htmlFor="email">Email</label>
           <input
-            className="border-2 border-red-200 p-2 rounded"
+            className="border-2 border-red-200 p-2 rounded outline-none focus:border-red-400"
             placeholder="Enter your email..."
             type="email"
             value={user.email}
@@ -72,7 +72,7 @@ const SignUp = () => {
           <label htmlFor="email">Password</label>
           <input
             type="password"
-            className="border-2 border-red-200 p-2 rounded"
+            className="border-2 border-red-200 p-2 rounded outline-none focus:border-red-400"
             placeholder="*************"
             value={user.password}
             onChange={(e) => {
@@ -82,15 +82,18 @@ const SignUp = () => {
 
           <button
            type="submit"
-            className="border-2 border-red-200 rounded p-2 mt-2"
+            className="bg-red-500 rounded p-2 mt-2 text-white"
            disabled={isLoading}
           >
             Sign Up
           </button>
+          <div className="mt-3">
+
           <Link href="/login">
             Already have an account{" "}
-            <span className="text-blue underline">login here</span>
+            <span className="hover:text-blue-500 underline">login here</span>
           </Link>
+          </div>
         </form>
       </div>
     </div>

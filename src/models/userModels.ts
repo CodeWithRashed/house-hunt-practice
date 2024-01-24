@@ -15,18 +15,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    isVerified: {
-        type: Boolean,
-        default: false
-    },
-    role: {
-        type: String,
-        required: true
-    },
-    forgotPasswordToken: String,
-    forgotPasswordTokenExpiry: Date,
-    verifyToken: String,
-    verifyTokenExpiry: Date
+   
 })
 
 const User = mongoose.models.User || mongoose.model('User', userSchema);
