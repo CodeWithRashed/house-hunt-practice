@@ -29,8 +29,6 @@ export async function POST(request: NextRequest) {
       name: reqBody.name,
       email: reqBody.email,
       password: hashedPass,
-      isVerified: reqBody.isVerified,
-      role: reqBody.role
     });
 
     //Saving User

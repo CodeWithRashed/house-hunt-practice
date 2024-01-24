@@ -12,8 +12,7 @@ const SignUp = () => {
     name: "",
     email: "",
     password: "",
-    isVerified: false,
-    role: "user" 
+   
   });
 
   const handleSubmit = async (event:any) => {
@@ -31,8 +30,7 @@ const SignUp = () => {
         name: "",
         email: "",
         password: "",
-        isVerified: false,
-        role: "user",
+       
       })
 
     setIsLoading(false)
