@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
     //JWT Token Data
     const tokenData = {
       id: user._id,
+      name: user.name
     };
 
     //Create JWT Token

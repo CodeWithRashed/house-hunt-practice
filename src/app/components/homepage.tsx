@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from "react";
 import HomeDataCard from "./homeCard";
+import Cookies from "js-cookie";
+import { getTokenData } from "@/helpers/getTokenData";
+import axios from "axios";
 interface House {
   id: number;
   address: {
@@ -25,6 +28,26 @@ const HomepageData = () => {
   const [searchString, setSearchString] = useState("");
 
   useEffect(() => {
+    const getUserData = async () => {
+      try {
+        // Check if document is defined
+
+        // Retrieve the token from the cookie (replace 'yourCookieName' with the actual cookie name)
+        // const token = await Cookies.get("token", { path: '/' });
+        // console.log(token);
+        // Make a GET request to the backend API with the token in the headers
+        // const res = await axios.get("/api/users/verify", {
+        //   headers: {
+        //     Authorization: `Bearer ${token}`,
+        //   },
+        // });
+
+        // Log the decoded user data
+        // console.log(res.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
     const rawHouseData = [
       {
         id: 1,
@@ -89,6 +112,7 @@ const HomepageData = () => {
 
     setAllHouseData(rawHouseData);
     setHouseData(rawHouseData);
+    // getUserData();
   }, []);
 
   const handleSearch = (event: any) => {
@@ -113,7 +137,7 @@ const HomepageData = () => {
         <div className="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
           <div className="flex justify-between w-full">
             <div className="flex gap-5 items-center w-1/2">
-              <p>user</p>
+              <p>Welcome</p>
             </div>
             {/* Search Input */}
             <form name="searchForm" onSubmit={handleSearch} className="w-1/2">
@@ -162,7 +186,7 @@ const HomepageData = () => {
         {/* Filter Data */}
 
         <div className="mt-5 my-5">
-          <div >
+          <div>
             {houseData.length > 0 ? (
               <div className="grid lg:grid-cols-3 gap-5">
                 {houseData.map((house, index) => (
