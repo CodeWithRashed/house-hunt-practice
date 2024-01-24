@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
+import { FaSpinner } from "react-icons/fa";
 
 
 const SignUp = () => {
@@ -33,13 +34,15 @@ const SignUp = () => {
        
       })
 
-    setIsLoading(false)
+  
     }
     
     
 
    }catch(err){
     console.log(err)
+   }finally{
+    setIsLoading(false)
    }
   };
   return (
@@ -84,8 +87,8 @@ const SignUp = () => {
            type="submit"
             className="bg-red-500 rounded p-2 mt-2 text-white"
            disabled={isLoading}
-          >
-            Sign Up
+          >{isLoading ? <FaSpinner className="flex justify-center items-center animate-spin  w-full mx-auto"/> : " Sign Up"}
+           
           </button>
           <div className="mt-3">
 
