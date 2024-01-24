@@ -52,61 +52,192 @@ const HomepageData = () => {
       {
         id: 1,
         address: {
-          street: "123 Main Street",
-          city: "Dhaka",
+          street: "606 Pine Street",
+          city: "Gulshan",
           state: "Dhaka Division",
         },
         description:
-          "Beautiful 2-bedroom apartment in the heart of Dhaka. Close to shops, restaurants, and public transportation.",
-        type: "Apartment",
+          "Sleek 2-bedroom penthouse with stunning city views and a private terrace.",
+        type: "Penthouse",
         bedrooms: 2,
-        bathrooms: 1,
-        garage: 0,
-        rent: 1200,
+        garage: 1,
+        bathrooms: 2,
+        rent: 2800,
         image:
           "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        area: 1200,
-        price: 10000,
+        area: 1600,
+        price: 18000,
       },
       {
         id: 2,
         address: {
-          street: "456 Elm Street",
+          street: "707 Elm Street",
           city: "Mirpur",
           state: "Dhaka Division",
         },
         description:
-          "Spacious 3-bedroom house with a private backyard. Perfect for families.",
-        type: "House",
-        bedrooms: 3,
-        garage: 1,
-        bathrooms: 2,
-        rent: 1800,
-
+          "Quaint 1-bedroom cottage surrounded by nature. Ideal for a peaceful retreat.",
+        type: "Cottage",
+        bedrooms: 1,
+        garage: 0,
+        bathrooms: 1,
+        rent: 1000,
         image:
           "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        area: 1200,
-        price: 10000,
+        area: 800,
+        price: 7000,
       },
       {
         id: 3,
         address: {
-          street: "789 Oak Street",
+          street: "808 Oak Street",
           city: "Dhaka",
           state: "Dhaka Division",
         },
         description:
-          "Cozy 1-bedroom studio apartment in a quiet neighborhood. Great for students or young professionals.",
-        type: "Studio",
-        bedrooms: 1,
-        garage: 5,
-        bathrooms: 1,
-        rent: 800,
-
+          "Modern 3-bedroom apartment with high-end finishes and a spacious balcony.",
+        type: "Apartment",
+        bedrooms: 3,
+        garage: 1,
+        bathrooms: 2,
+        rent: 2200,
         image:
           "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-        area: 1200,
-        price: 10000,
+        area: 1400,
+        price: 16000,
+      },
+      {
+        id: 4,
+        address: {
+          street: "567 Pine Street",
+          city: "Gulshan",
+          state: "Dhaka Division",
+        },
+        description:
+          "Modern 4-bedroom house with a spacious living room and a beautiful garden.",
+        type: "House",
+        bedrooms: 4,
+        garage: 2,
+        bathrooms: 3,
+        rent: 2500,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 1800,
+        price: 15000,
+      },
+      {
+        id: 5,
+        address: {
+          street: "890 Maple Street",
+          city: "Banani",
+          state: "Dhaka Division",
+        },
+        description:
+          "Charming 2-bedroom cottage with a fireplace. Perfect for a cozy retreat.",
+        type: "Cottage",
+        bedrooms: 2,
+        garage: 0,
+        bathrooms: 1,
+        rent: 1200,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 1000,
+        price: 9000,
+      },
+      {
+        id: 6,
+        address: {
+          street: "101 Cedar Street",
+          city: "Uttara",
+          state: "Dhaka Division",
+        },
+        description:
+          "Elegant 3-bedroom apartment with a balcony and panoramic city views.",
+        type: "Apartment",
+        bedrooms: 3,
+        garage: 1,
+        bathrooms: 2,
+        rent: 2000,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 1500,
+        price: 12000,
+      },
+      {
+        id: 7,
+        address: {
+          street: "202 Birch Street",
+          city: "Mohakhali",
+          state: "Dhaka Division",
+        },
+        description:
+          "Spacious 5-bedroom house with a large backyard and swimming pool.",
+        type: "House",
+        bedrooms: 5,
+        garage: 3,
+        bathrooms: 4,
+        rent: 3500,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 2500,
+        price: 20000,
+      },
+      {
+        id: 8,
+        address: {
+          street: "303 Ash Street",
+          city: "Banani",
+          state: "Dhaka Division",
+        },
+        description:
+          "Cozy 1-bedroom apartment with modern amenities. Ideal for young professionals.",
+        type: "Apartment",
+        bedrooms: 1,
+        garage: 0,
+        bathrooms: 1,
+        rent: 900,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 800,
+        price: 7000,
+      },
+      {
+        id: 9,
+        address: {
+          street: "404 Walnut Street",
+          city: "Gulshan",
+          state: "Dhaka Division",
+        },
+        description:
+          "Luxurious 6-bedroom mansion with a private theater and fitness center.",
+        type: "Mansion",
+        bedrooms: 6,
+        garage: 4,
+        bathrooms: 5,
+        rent: 5000,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 3500,
+        price: 30000,
+      },
+      {
+        id: 10,
+        address: {
+          street: "505 Oak Street",
+          city: "Mirpur",
+          state: "Dhaka Division",
+        },
+        description:
+          "Affordable 2-bedroom apartment with convenient access to public transport.",
+        type: "Apartment",
+        bedrooms: 2,
+        garage: 0,
+        bathrooms: 1,
+        rent: 1000,
+        image:
+          "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+        area: 900,
+        price: 8000,
       },
     ];
 
